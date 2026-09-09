@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Arena | Café & Snacks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Cafe GAming/cafe.css">
+    
+</head>
+
+<body>
+
+    <!-- ==========================================
+         BACKGROUND
+    =========================================== -->
+
+    <div class="background-grid"></div>
+    <div class="ambient-glow glow-purple"></div>
+    <div class="ambient-glow glow-cyan"></div>
+
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="header">
+
+        <a href="../index.html" class="logo">
+
+            <div class="logo-box">
+                LOGO
+            </div>
+
+            <div class="logo-name">
+                <small>NEON</small>
+                <strong>ARENA</strong>
+            </div>
+
+        </a>
+
+
+        <div class="header-title">
+            <span>01</span>
+            CAFÉ & SNACKS
+        </div>
+
+
+        <div class="header-actions">
+
+    <button
+    class="reservation-button-header"
+    id="myReservationButton"
+>
+
+    🎟️
+
+    <span>
+        MIS RESERVAS
+    </span>
+
+</button>
+
+    <button class="cart-button" id="cartButton">
+
+        <span class="cart-icon">🛒</span>
+
+        <span class="cart-text">
+            PEDIDO
+        </span>
+
+        <span class="cart-count" id="cartCount">
+            0
+        </span>
+
+    </button>
+
+    <a href="../index.html" class="back-button">
+        ← Volver al Inicio
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <section class="cafe-hero">
+
+        <div class="hero-label">
+            <span></span>
+            ESPORTS CAFÉ
+            <span></span>
+        </div>
+
+        <h1>
+            COMÉ.
+            <span>JUGÁ.</span>
+            DISFRUTÁ.
+        </h1>
+
+        <p>
+            Tu partida no puede esperar.
+            Pedí algo rico y seguí jugando.
+        </p>
+
+    </section>
+
+
+    <!-- ==========================================
+         MENU CONTROLS
+    =========================================== -->
+
+    <section class="menu-section">
+
+        <div class="menu-controls">
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar producto..."
+                >
+
+                <span class="search-shortcut">
+                    /
+                </span>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="categories" id="categories">
+
+                <button
+                    class="category-button active"
+                    data-category="todos"
+                >
+                    Todos
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="cafeteria"
+                >
+                    ☕ Cafetería
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="bebidas"
+                >
+                    ⚡ Bebidas & Energizantes
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="hamburguesas"
+                >
+                    🍔 Hamburguesas & Snacks
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="combos"
+                >
+                    🎮 Combos Gamer
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="postres"
+                >
+                    🍰 Postres
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             PRODUCTS
+        =========================================== -->
+
+        <div class="products-header">
+
+            <div>
+                <span class="section-label">
+                    MENÚ DIGITAL
+                </span>
+
+                <h2>
+                    ELEGÍ TU
+                    <span>COMBUSTIBLE</span>
+                </h2>
+            </div>
+
+            <span id="productCounter">
+                8 productos
+            </span>
+
+        </div>
+
+
+        <div
+            class="products-grid"
+            id="productsGrid"
+        ></div>
+
+
+        <!-- NO RESULTS -->
+
+        <div
+            class="no-results"
+            id="noResults"
+        >
+            <div>☕</div>
+
+            <h3>
+                No encontramos ese producto
+            </h3>
+
+            <p>
+                Probá con otro nombre o categoría.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         QR / CYBER CTA
+    =========================================== -->
+
+    <section class="qr-section">
+
+        <div class="qr-content">
+
+            <span class="qr-label">
+                PEDIDOS DESDE TU PC
+            </span>
+
+            <h2>
+                ¿ESTÁS JUGANDO?
+                <span>NO TE LEVANTES.</span>
+            </h2>
+
+            <p>
+                Escaneá el QR desde tu mesa del Cyber,
+                elegí lo que querés y te lo llevamos
+                directamente a tu puesto.
+            </p>
+
+            <div class="qr-benefits">
+
+                <span>✓ Pedido desde tu mesa</span>
+                <span>✓ Sin interrumpir la partida</span>
+                <span>✓ Entrega rápida</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="qr-placeholder">
+
+            <div class="qr-code">
+                <span>QR</span>
+            </div>
+
+            <small>
+                ESCANEÁ PARA PEDIR
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <div class="logo-box">
+                LOGO
+            </div>
+
+            <div>
+                <strong>NEON ARENA</strong>
+                <small>Esports Café & Gaming</small>
+            </div>
+
+        </div>
+
+
+        <div class="footer-info">
+
+            <div>
+                <strong>HORARIOS</strong>
+                <span>Lunes a Domingo</span>
+                <span>10:00 — 02:00 HS</span>
+            </div>
+
+            <div>
+                <strong>PEDIDOS</strong>
+                <span>Desde tu mesa Cyber</span>
+                <span>o directamente en Café</span>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+            © 2026 Neon Arena
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+     CART
+========================================== -->
+
+<div
+    class="cart-modal"
+    id="cartModal"
+>
+
+    <div
+        class="cart-background"
+        id="cartBackground"
+    ></div>
+
+
+    <aside class="cart-panel">
+
+        <!-- HEADER -->
+
+        <div class="cart-header">
+
+            <div>
+
+                <span class="cart-label">
+                    TU PEDIDO
+                </span>
+
+                <h2>
+                    CARRITO
+                    <span>NEON</span>
+                </h2>
+
+            </div>
+
+
+            <button
+                class="cart-close"
+                id="cartClose"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        ></div>
+
+
+        <!-- EMPTY -->
+
+        <div
+            class="cart-empty"
+            id="cartEmpty"
+        >
+
+            <div>
+                🛒
+            </div>
+
+            <h3>
+                Tu carrito está vacío
+            </h3>
+
+            <p>
+                Elegí algo del menú para comenzar tu pedido.
+            </p>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    TOTAL ESTIMADO
+                </span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="reserve-button"
+                id="reserveButton"
+            >
+
+                RESERVAR PEDIDO
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+            <small class="cart-note">
+
+                El pedido no será preparado hasta
+                que lo reclames en caja.
+
+            </small>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+    <!-- ==========================================
+         PRODUCT MODAL
+    =========================================== -->
+
+    <div
+        class="modal"
+        id="productModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-background"
+            id="modalBackground"
+        ></div>
+
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+            >
+                ×
+            </button>
+
+
+            <!-- IMAGE -->
+
+            <div class="modal-image-container">
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt=""
+                >
+
+                <span id="modalCategory">
+                    PRODUCTO
+                </span>
+
+            </div>
+
+
+            <!-- INFO -->
+
+            <div class="modal-info">
+
+                <span
+                    class="modal-label"
+                    id="modalLabel"
+                >
+                    RECOMENDADO GAMER
+                </span>
+
+                <h2 id="modalTitle">
+                    Producto
+                </h2>
+
+                <p
+                    class="modal-description"
+                    id="modalDescription"
+                ></p>
+
+
+                <!-- INGREDIENTES -->
+
+                <div class="detail-block">
+
+                    <h3>
+                        Ingredientes
+                    </h3>
+
+                    <p id="modalIngredients"></p>
+
+                </div>
+
+
+                <!-- ALERGENOS -->
+
+                <div class="detail-block">
+
+                    <h3>
+                        Información
+                    </h3>
+
+                    <div
+                        class="modal-badges"
+                        id="modalBadges"
+                    ></div>
+
+                </div>
+
+
+                <!-- PERSONALIZACIÓN -->
+
+                <div class="customization">
+
+                    <h3>
+                        Personalizá tu pedido
+                    </h3>
+
+
+                    <div id="customOptions"></div>
+
+                </div>
+
+
+                <!-- BOTTOM -->
+
+                <div class="modal-bottom">
+
+                    <div class="quantity">
+
+                        <button id="decreaseQuantity">
+                            −
+                        </button>
+
+                        <span id="quantity">
+                            1
+                        </span>
+
+                        <button id="increaseQuantity">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <div class="modal-price">
+
+                        <small>
+                            TOTAL
+                        </small>
+
+                        <strong id="modalPrice">
+                            $0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="add-order-button"
+                    id="addOrderButton"
+                >
+                    AGREGAR AL PEDIDO
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- ==========================================
+     RESERVATIONS LIST MODAL
+========================================== -->
+
+<div
+    class="reservations-modal"
+    id="reservationsModal"
+>
+
+    <div
+        class="reservations-background"
+        id="reservationsBackground"
+    ></div>
+
+
+    <div class="reservations-content">
+
+
+        <!-- HEADER -->
+
+        <div class="reservations-header">
+
+            <div>
+
+                <span>
+                    HISTORIAL DE PEDIDOS
+                </span>
+
+                <h2>
+                    MIS
+                    <strong>RESERVAS</strong>
+                </h2>
+
+            </div>
+
+
+            <button
+                class="reservations-close"
+                id="reservationsClose"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- LIST -->
+
+        <div
+            class="reservations-list"
+            id="reservationsList"
+        ></div>
+
+
+        <!-- EMPTY -->
+
+        <div
+            class="reservations-empty"
+            id="reservationsEmpty"
+        >
+
+            <div>
+                🎟️
+            </div>
+
+            <h3>
+                No tenés reservas
+            </h3>
+
+            <p>
+                Cuando reserves un pedido,
+                aparecerá acá.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+    RESERVATION MODAL
+========================================== -->
+
+<div
+    class="reservation-modal"
+    id="reservationModal"
+>
+
+    <div
+        class="reservation-background"
+        id="reservationBackground"
+    ></div>
+
+
+    <div class="reservation-content">
+
+
+        <!-- CLOSE -->
+
+        <button
+            class="reservation-close"
+            id="reservationClose"
+        >
+            ×
+        </button>
+
+
+        <!-- SUCCESS ICON -->
+
+        <div class="reservation-icon">
+            ✓
+        </div>
+
+
+        <span class="reservation-label">
+            RESERVA CONFIRMADA
+        </span>
+
+
+        <h2>
+            ¡PEDIDO
+            <span>RESERVADO!</span>
+        </h2>
+
+
+        <p class="reservation-description">
+
+            Tu pedido fue registrado correctamente,
+            pero todavía no está siendo preparado.
+
+        </p>
+
+
+        <!-- CODE -->
+
+        <div class="reservation-code-box">
+
+            <small>
+                CÓDIGO DE RESERVA
+            </small>
+
+            <strong id="reservationCode">
+                NA-00000
+            </strong>
+
+        </div>
+
+
+        <!-- INFO -->
+
+        <div class="reservation-info">
+
+            <div class="reservation-info-icon">
+                📍
+            </div>
+
+            <div>
+
+                <strong>
+                    ¿Cómo reclamo mi pedido?
+                </strong>
+
+                <p>
+
+                    Acercate a la caja de Neon Arena
+                    e indicá tu código de reserva.
+
+                    El pago y la preparación del pedido
+                    se realizarán únicamente en caja.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOTAL -->
+
+        <div class="reservation-total">
+
+            <span>
+                TOTAL A PAGAR EN CAJA
+            </span>
+
+            <strong id="reservationTotal">
+                $0
+            </strong>
+
+        </div>
+
+        <!-- PRODUCTS -->
+
+<div class="reservation-products">
+
+    <span class="reservation-products-title">
+
+        TU PEDIDO
+
+    </span>
+
+
+    <div
+        id="reservationProducts"
+    ></div>
+
+</div>
+
+
+        <!-- BUTTON -->
+
+        <button
+            class="reservation-done-button"
+            id="reservationDone"
+        >
+
+            ENTENDIDO
+
+            <span>
+                →
+            </span>
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+    <!-- TOAST -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        <span>✓</span>
+
+        <div>
+            <strong>
+                Producto agregado
+            </strong>
+
+            <small>
+                Tu pedido fue actualizado.
+            </small>
+        </div>
+    </div>
+
+
+    <script src="../Cafe GAming/cafe.js"></script>
+
+</body>
+</html>
