@@ -34,7 +34,7 @@ navLinks.forEach(link => {
 
 
 // ========================================
-// EFECTO DE CARDS
+// EFECTO DE CARD
 // ========================================
 
 const cards = document.querySelectorAll(".experience-card");
